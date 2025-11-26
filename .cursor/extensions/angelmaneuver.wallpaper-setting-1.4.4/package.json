@@ -1,0 +1,273 @@
+{
+	"name": "wallpaper-setting",
+	"displayName": "Wallpaper Setting",
+	"description": "VSCode like a crystal clear.",
+	"publisher": "Angelmaneuver",
+	"version": "1.4.4",
+	"homepage": "https://github.com/Angelmaneuver/wallpaper-setting/blob/main/README.md#wallpaper-setting",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Angelmaneuver/wallpaper-setting.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Angelmaneuver/wallpaper-setting/issues"
+	},
+	"sponsor": {
+		"url": "https://github.com/sponsors/Angelmaneuver"
+	},
+	"engines": {
+		"vscode": "^1.96.0"
+	},
+	"icon": "resource/AppIcon.png",
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"background",
+		"wallpaper",
+		"Mac"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"main": "./dist/extension.js",
+	"l10n": "./l10n",
+	"contributes": {
+		"commands": [
+			{
+				"command": "wallpaper-setting.guidance",
+				"title": "Wallpaper Setting",
+				"category": "Preferences"
+			}
+		],
+		"configuration": {
+			"title": "Wallpaper Setting",
+			"properties": {
+				"wallpaper-setting.wallpaper.filePath": {
+					"order": 0,
+					"type": "string",
+					"scope": "application",
+					"default": "",
+					"markdownDescription": "%wallpaper-setting.wallpaper.filePath%"
+				},
+				"wallpaper-setting.slide.filePaths": {
+					"order": 1,
+					"type": "array",
+					"scope": "application",
+					"default": [],
+					"markdownDescription": "%wallpaper-setting.slide.filePaths%"
+				},
+				"wallpaper-setting.slide.interval.time": {
+					"order": 2,
+					"type": "number",
+					"scope": "application",
+					"maximum": 65555,
+					"minimum": 0,
+					"default": 25,
+					"markdownDescription": "%wallpaper-setting.slide.interval.time%"
+				},
+				"wallpaper-setting.slide.interval.unit": {
+					"order": 3,
+					"type": "string",
+					"scope": "application",
+					"default": "Minute",
+					"enum": [
+						"Hour",
+						"Minute",
+						"Second",
+						"MilliSecond"
+					],
+					"markdownDescription": "%wallpaper-setting.slide.interval.unit%"
+				},
+				"wallpaper-setting.slide.random": {
+					"order": 4,
+					"type": "boolean",
+					"scope": "application",
+					"default": false,
+					"markdownDescription": "%wallpaper-setting.slide.random%"
+				},
+				"wallpaper-setting.slide.effect.fadeIn": {
+					"order": 5,
+					"type": "boolean",
+					"scope": "application",
+					"default": true,
+					"markdownDescription": "%wallpaper-setting.slide.effect.fadeIn%"
+				},
+				"wallpaper-setting.slide.load.waitComplete": {
+					"order": 6,
+					"type": "boolean",
+					"scope": "application",
+					"default": false,
+					"markdownDescription": "%wallpaper-setting.slide.load.waitComplete%"
+				},
+				"wallpaper-setting.movie.filePath": {
+					"order": 7,
+					"type": "string",
+					"scope": "application",
+					"default": "",
+					"markdownDescription": "%wallpaper-setting.movie.filePath%"
+				},
+				"wallpaper-setting.movie.playbackRate": {
+					"order": 8,
+					"type": "number",
+					"scope": "application",
+					"maximum": 16,
+					"minimum": 0.0625,
+					"default": 1,
+					"markdownDescription": "%wallpaper-setting.movie.playbackRate%"
+				},
+				"wallpaper-setting.favorite.set.image": {
+					"order": 9,
+					"type": "object",
+					"scope": "application",
+					"default": {},
+					"markdownDescription": "%wallpaper-setting.favorite.set.image%"
+				},
+				"wallpaper-setting.favorite.set.slide": {
+					"order": 10,
+					"type": "object",
+					"scope": "application",
+					"default": {},
+					"markdownDescription": "%wallpaper-setting.favorite.set.slide%"
+				},
+				"wallpaper-setting.favorite.set.movie": {
+					"order": 11,
+					"type": "object",
+					"scope": "application",
+					"default": {},
+					"markdownDescription": "%wallpaper-setting.favorite.set.movie%"
+				},
+				"wallpaper-setting.favorite.startUp.random": {
+					"order": 12,
+					"type": "boolean",
+					"scope": "application",
+					"default": false,
+					"markdownDescription": "%wallpaper-setting.favorite.startUp.random%"
+				},
+				"wallpaper-setting.favorite.startUp.filter": {
+					"order": 13,
+					"type": "string",
+					"scope": "application",
+					"default": "All",
+					"enum": [
+						"All",
+						"Image",
+						"Slide",
+						"Movie"
+					],
+					"markdownDescription": "%wallpaper-setting.favorite.startUp.filter%"
+				},
+				"wallpaper-setting.favorite.ondemand.active": {
+					"order": 14,
+					"type": "boolean",
+					"scope": "application",
+					"default": false,
+					"markdownDescription": "%wallpaper-setting.favorite.ondemand.active%"
+				},
+				"wallpaper-setting.favorite.ondemand.select": {
+					"order": 15,
+					"type": "string",
+					"scope": "resource",
+					"default": "",
+					"markdownDescription": "%wallpaper-setting.favorite.ondemand.select%"
+				},
+				"wallpaper-setting.profile.active": {
+					"order": 18,
+					"type": "boolean",
+					"scope": "application",
+					"default": false,
+					"markdownDescription": "%wallpaper-setting.profile.active (deprecated)%"
+				},
+				"wallpaper-setting.profile.set.image": {
+					"order": 19,
+					"type": "object",
+					"scope": "application",
+					"default": {},
+					"markdownDescription": "%wallpaper-setting.profile.set.image (deprecated)%"
+				},
+				"wallpaper-setting.watermark.active": {
+					"order": 16,
+					"type": "boolean",
+					"scope": "application",
+					"default": false,
+					"markdownDescription": "%wallpaper-setting.watermark.active%"
+				},
+				"wallpaper-setting.watermark.filePath": {
+					"order": 17,
+					"type": "string",
+					"scope": "application",
+					"default": "",
+					"markdownDescription": "%wallpaper-setting.watermark.filePath%"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run package",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"lint": "eslint src --ext ts",
+		"compile-tests": "tspc -p . --outDir out",
+		"watch-tests": "tspc -p . -w --outDir out",
+		"pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+		"test": "vscode-test",
+		"coverage": "yarn run test --coverage",
+		"generate": "npx @vscode/l10n-dev export -o ./l10n ./src"
+	},
+	"dependencies": {
+		"@vscode/l10n": "^0.0.18",
+		"clean-css": "^5.3.3",
+		"jsonc-parser": "^3.3.1",
+		"terser": "^5.37.0"
+	},
+	"devDependencies": {
+		"@istanbuljs/nyc-config-typescript": "^1.0.2",
+		"@types/clean-css": "^4.2.11",
+		"@types/glob": "^8.1.0",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "^22.10.2",
+		"@types/sinon": "^17.0.3",
+		"@types/vscode": "^1.96.0",
+		"@typescript-eslint/eslint-plugin": "^8.18.2",
+		"@typescript-eslint/parser": "^8.18.2",
+		"@vscode/l10n-dev": "^0.0.35",
+		"@vscode/test-cli": "^0.0.10",
+		"@vscode/test-electron": "^2.4.1",
+		"eslint": "^9.17.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-import": "^2.31.0",
+		"eslint-plugin-unused-imports": "^4.1.4",
+		"glob": "^8.1.0",
+		"mocha": "^11.0.1",
+		"nyc": "^17.1.0",
+		"sinon": "^19.0.2",
+		"source-map-support": "^0.5.21",
+		"ts-loader": "^9.5.1",
+		"ts-node": "^10.9.2",
+		"ts-patch": "^3.3.0",
+		"typescript": "^5.7.2",
+		"typescript-transform-paths": "^3.5.3",
+		"webpack": "^5.97.1",
+		"webpack-cli": "^6.0.1"
+	},
+	"packageManager": "yarn@1.22.22",
+	"__metadata": {
+		"id": "0c935b78-ad6c-4301-94f3-e1ae71d0a8c1",
+		"publisherId": "e8f5d386-bbd6-4ab2-9d9e-1347ed62aca5",
+		"publisherDisplayName": "Angelmaneuver",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1746447479428,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 1281601
+	}
+}

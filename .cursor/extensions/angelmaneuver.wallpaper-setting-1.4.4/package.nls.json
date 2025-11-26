@@ -1,0 +1,22 @@
+{
+  "wallpaper-setting.wallpaper.filePath": "Path of the image file to be set as wallpaper.",
+  "wallpaper-setting.slide.filePaths": "Path of the image files used by the slide to be set as wallpaper.",
+  "wallpaper-setting.slide.interval.time": "Image switching interval time.",
+  "wallpaper-setting.slide.interval.unit": "Unit of measure for the Image switching interval.",
+  "wallpaper-setting.slide.random": "Randomize the order in which images slide.",
+  "wallpaper-setting.slide.effect.fadeIn": "Fade in when the slide image changes.",
+  "wallpaper-setting.slide.load.waitComplete": "Wait for image loading to complete * Depending on the images file size, startup may be slow.",
+  "wallpaper-setting.movie.filePath": "Path of the movie file to be set as wallpaper.",
+  "wallpaper-setting.movie.playbackRate": "Movie playback rate.",
+  "wallpaper-setting.favorite.set.image": "Favorite Wallpaper image set.",
+  "wallpaper-setting.favorite.set.slide": "Favorite Wallpaper slide set.",
+  "wallpaper-setting.favorite.set.movie": "Favorite Wallpaper movie set.",
+  "wallpaper-setting.favorite.startUp.random": "Randomly set wallpaper from favorite settings at startup.",
+  "wallpaper-setting.favorite.startUp.filter": "Specifies the type of wallpaper to be set at start up.",
+  "wallpaper-setting.favorite.ondemand.active": "Activate the on demand switching of favorite images.",
+  "wallpaper-setting.favorite.ondemand.select": "Selected image.",
+  "wallpaper-setting.profile.active (deprecated)": "Activate the wallpaper set in the profile. (deprecated)",
+  "wallpaper-setting.profile.set.image (deprecated)": "Profile wallpaper image set. (deprecated)",
+  "wallpaper-setting.watermark.active": "Activate the watermark setting.",
+  "wallpaper-setting.watermark.filePath": "Path of the image file to be set as watermark."
+}

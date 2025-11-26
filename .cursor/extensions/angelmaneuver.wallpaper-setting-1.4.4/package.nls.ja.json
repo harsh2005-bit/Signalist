@@ -1,0 +1,22 @@
+{
+  "wallpaper-setting.wallpaper.filePath": "壁紙に設定する画像ファイルのパスです。",
+  "wallpaper-setting.slide.filePaths": "壁紙に設定するスライドが使用する画像ファイルのパスです。",
+  "wallpaper-setting.slide.interval.time": "画像切り替え間隔の時間です。",
+  "wallpaper-setting.slide.interval.unit": "画像切り替え間隔の単位です。",
+  "wallpaper-setting.slide.random": "画像の切り替え順番をランダムにする。",
+  "wallpaper-setting.slide.effect.fadeIn": "画像切り替え時にフェードイン効果を有効にする。",
+  "wallpaper-setting.slide.load.waitComplete": "画像の読み込みが完了するまで待つようにする。* 画像のファイルサイズによっては起動に時間が掛かる場合があります。",
+  "wallpaper-setting.movie.filePath": "壁紙に設定する動画ファイルのパスです。",
+  "wallpaper-setting.movie.playbackRate": "動画の再生レートです。",
+  "wallpaper-setting.favorite.set.image": "お気に入りの壁紙画像のセットです。",
+  "wallpaper-setting.favorite.set.slide": "お気に入りの壁紙スライドのセットです。",
+  "wallpaper-setting.favorite.set.movie": "お気に入りの壁紙動画のセットです。",
+  "wallpaper-setting.favorite.startUp.random": "起動時にお気に入りの設定から壁紙をランダムに設定します。",
+  "wallpaper-setting.favorite.startUp.filter": "起動時に設定する壁紙の種類を指定します。",
+  "wallpaper-setting.favorite.ondemand.active": "お気に入り画像のオンデマンド切り替えを有効にします。",
+  "wallpaper-setting.favorite.ondemand.select": "選択中の画像です。",
+  "wallpaper-setting.profile.active (deprecated)": "プロファイルに設定した壁紙を有効にします (廃止)。",
+  "wallpaper-setting.profile.set.image (deprecated)": "プロファイルの壁紙画像のセットです (廃止)。",
+  "wallpaper-setting.watermark.active": "ウォーターマーク設定を有効にします。",
+  "wallpaper-setting.watermark.filePath": "ウォーターマークに設定する画像ファイルのパスです。"
+}
